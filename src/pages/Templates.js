@@ -25,7 +25,7 @@ function Templates() {
       headers: { Authorization: token },
     };
     axios
-      .get("http://localhost:3100/api/v1/user/viewtemplates", config)
+      .get("https://capfinproject.onrender.com/api/v1/user/viewtemplates", config)
       .then((res) => {
         setTemplates(res.data.templates);
       })
@@ -62,7 +62,7 @@ function Templates() {
   // Function to handle confirmation of template deletion
   const onHandleConfirm = () => {
     axios
-      .post(`http://localhost:3100/api/v1/user/deletetemplate/${templateId}`)
+      .post(`https://capfinproject.onrender.com/api/v1/user/deletetemplate/${templateId}`)
       .then((res) => {
         console.log("successfully deleted");
         setModalClose(true);

@@ -23,7 +23,7 @@ function Send() {
         const config = {
           headers: { Authorization: token },
         };
-        const response = await axios.get("http://localhost:3100/api/v1/user/viewgroups", config);
+        const response = await axios.get("https://capfinproject.onrender.com/api/v1/user/viewgroups", config);
         setGroups(response.data.groups);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -54,7 +54,7 @@ function Send() {
     };
     axios
       .post(
-        "http://localhost:3100/api/v1/user/sendmail",
+        "https://capfinproject.onrender.com/api/v1/user/sendmail",
         {
           group,
           subject,
