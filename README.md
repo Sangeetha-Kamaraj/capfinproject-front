@@ -1,81 +1,38 @@
-Bulk Mailer App with MERN Stack and SendGrid API
+# Bulk Mailer App - Frontend
 
-This project is a bulk mailer application that allows users to send customized mails to groups of people, using the MERN (MongoDB, Express, React, Node.js) stack and the SendGrid API.
-The application is built using the MERN (MongoDB, Express, React, Node.js) stack, a popular full-stack JavaScript framework for building web applications.
-MongoDB is used as the database to store user data, mail groups, and templates.
-Express is used as the backend framework to handle HTTP requests and routes.
-React is used as the frontend library to create the user interface.
-Node.js is used as the server-side platform to run the backend code.
-The SendGrid API is used to send bulk mails to groups of people.
-Axios is used to make API requests to the backend.
-Bootstrap is used for styling the user interface.
-The application can be customized and extended to include additional features or functionality.
-The application can be used as a learning resource for those interested in building bulk mailer applications or similar projects.
-
-Project Setup
-
-To run this project on your local machine, follow these steps:
-
-Navigate to the project backend directory using cd backend
-
-Install dependencies using npm install
-
-Create a .env file in the root directory and add the following variables:
-
-BASEURL=/api/v1
-
-DATABASE= <your-mongodb-url>
-
-Secret_Code= <your-jwt-secret>
-
-Mail_Secret= <your-sendgrid-api-key>
-
-Start the development server using npm start
-
-Navigate to the project frontend directory using cd frontend
-
-Install dependencies using npm install
-
-Start the development server using npm start
-
-Features
-
-Users can sign up and log in to their account.
-
-Users can save mail groups and templates.
-
-Users can select a group and choose a custom message or template to send.
-
-Users can view the details of sent mails in the sent section.
+This is the frontend portion of the Bulk Mailer application, a tool that allows users to send customized emails to groups of people using the MERN stack (MongoDB, Express, React, Node.js) along with the SendGrid API.
 
 
-Usage
-
-To use the application, follow these steps:
-
-Sign up and log in to your account.
-
-Create a mail group by entering a name and email addresses.
-
-Create a mail template by entering a subject and body.
-
-To send a mail, select a group and choose a custom message or template.
-
-After sending the mail, view the details of the sent mail in the sent section.
+## Project Overview
+The frontend of the Bulk Mailer App is responsible for providing a user-friendly interface for interacting with the application. 
+It is built using React and integrates with the backend APIs to manage mail groups, templates, and sending bulk emails.
 
 
-Technologies Used
+## Setup Instructions
 
-MongoDB
+To run the frontend of the Bulk Mailer App on your local machine, follow these steps:
 
-Express
+1. Clone the repository:git clone https://github.com/Sangeetha-Kamaraj/capfinproject.git
+2. Navigate to the project backend directory:cd front
+3. Install dependencies:npm install
+4. Start the development server:npm start
+5. Access the application in your web browser at `http://localhost:3000`.
 
-React
+## Features
 
-Node.js
+- User authentication: Sign up and log in to user accounts.
+- Mail group management: Create, update, and delete mail groups.
+- Mail template management: Create, update, and delete mail templates.
+- Sending bulk emails: Select a group and send custom messages or templates to group members.
+- View sent emails: View details of emails sent from the application.
 
-SendGrid API
+## Technologies Used
 
-Axios
-
-Bootstrap
+- **Express**: Backend framework for handling HTTP requests and routes.
+- **MongoDB**: Database for storing user data, mail groups, and templates.
+- **SendGrid API**: Integration for sending bulk emails to groups of people.
+- **Node.js**: Server-side platform for running the backend code.
+- **Axios**: HTTP client for making API requests from the frontend.
+- **JWT (JSON Web Tokens)**: Authentication mechanism for securing API endpoints.
+- **dotenv**: Library for loading environment variables from a `.env` file.
+- **bcrypt.js**: Library for hashing user passwords for storage.
