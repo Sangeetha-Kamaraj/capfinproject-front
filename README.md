@@ -50,4 +50,3 @@ Node.js
 SendGrid API
 Axios
 Bootstrap
-ChatGPT
