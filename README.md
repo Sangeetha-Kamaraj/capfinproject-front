@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+Bulk Mailer App with MERN Stack and SendGrid API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a bulk mailer application that allows users to send customized mails to groups of people, using the MERN (MongoDB, Express, React, Node.js) stack and the SendGrid API.
+The application is built using the MERN (MongoDB, Express, React, Node.js) stack, a popular full-stack JavaScript framework for building web applications.
+MongoDB is used as the database to store user data, mail groups, and templates.
+Express is used as the backend framework to handle HTTP requests and routes.
+React is used as the frontend library to create the user interface.
+Node.js is used as the server-side platform to run the backend code.
+The SendGrid API is used to send bulk mails to groups of people.
+Axios is used to make API requests to the backend.
+Bootstrap is used for styling the user interface.
+The application can be customized and extended to include additional features or functionality.
+The application can be used as a learning resource for those interested in building bulk mailer applications or similar projects.
 
-## Available Scripts
+Project Setup
 
-In the project directory, you can run:
+To run this project on your local machine, follow these steps:
+Navigate to the project backend directory using cd backend
+Install dependencies using npm install
+Create a .env file in the root directory and add the following variables:
+BASEURL=/api/v1
+DATABASE= <your-mongodb-url>
+Secret_Code= <your-jwt-secret>
+Mail_Secret= <your-sendgrid-api-key>
+Start the development server using npm start
+Navigate to the project frontend directory using cd frontend
+Install dependencies using npm install
+Start the development server using npm start
+Features
+Users can sign up and log in to their account.
+Users can save mail groups and templates.
+Users can select a group and choose a custom message or template to send.
+Users can view the details of sent mails in the sent section.
 
-### `npm start`
+Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To use the application, follow these steps:
+Sign up and log in to your account.
+Create a mail group by entering a name and email addresses.
+Create a mail template by entering a subject and body.
+To send a mail, select a group and choose a custom message or template.
+After sending the mail, view the details of the sent mail in the sent section.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies Used
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MongoDB
+Express
+React
+Node.js
+SendGrid API
+Axios
+Bootstrap
+ChatGPT
