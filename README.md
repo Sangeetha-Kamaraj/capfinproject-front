@@ -15,38 +15,67 @@ The application can be used as a learning resource for those interested in build
 Project Setup
 
 To run this project on your local machine, follow these steps:
+
 Navigate to the project backend directory using cd backend
+
 Install dependencies using npm install
+
 Create a .env file in the root directory and add the following variables:
+
 BASEURL=/api/v1
+
 DATABASE= <your-mongodb-url>
+
 Secret_Code= <your-jwt-secret>
+
 Mail_Secret= <your-sendgrid-api-key>
+
 Start the development server using npm start
+
 Navigate to the project frontend directory using cd frontend
+
 Install dependencies using npm install
+
 Start the development server using npm start
+
 Features
+
 Users can sign up and log in to their account.
+
 Users can save mail groups and templates.
+
 Users can select a group and choose a custom message or template to send.
+
 Users can view the details of sent mails in the sent section.
+
 
 Usage
 
 To use the application, follow these steps:
+
 Sign up and log in to your account.
+
 Create a mail group by entering a name and email addresses.
+
 Create a mail template by entering a subject and body.
+
 To send a mail, select a group and choose a custom message or template.
+
 After sending the mail, view the details of the sent mail in the sent section.
+
 
 Technologies Used
 
 MongoDB
+
 Express
+
 React
+
 Node.js
+
 SendGrid API
+
 Axios
+
 Bootstrap
